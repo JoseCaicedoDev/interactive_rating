@@ -5,6 +5,7 @@ const Card = styled.div`
   max-width: 20rem;
   border-radius: 2rem;
   padding: 1rem;
+  text-align:center;
 `
 const Title = styled.h1`
   color: var(--White);
