@@ -2,12 +2,15 @@ import React, {useState} from 'react';
 
 const NumberContext = React.createContext()
 
-function UseNumberProvider(props){
+function NumberProvider(props){
   const onClickNumberSupport = (num) => {
     let numberSupport = parseInt(num.target.innerText)
-    return setNumber(numberSupport)
-  }
-  const [number, setNumber] = useState(0)
+
+    setNumber(numberSupport)
+ }
+
+const [number, setNumber] = useState(0)
+
   return(
     <NumberContext.Provider value={{
       onClickNumberSupport,
@@ -18,4 +21,4 @@ function UseNumberProvider(props){
   )
 }
 
-export {NumberContext, UseNumberProvider}
+export {NumberContext, NumberProvider}

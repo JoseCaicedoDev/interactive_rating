@@ -9,15 +9,16 @@ const ListConstainer = styled.ul`
   margin: 1.5rem 0;
 `
 const ListItem = styled.li`
-  background: var(--Dark-Blue);
+  background: ${props => props.select ? 'var(--Medium-Grey)' : 'var(--Dark-Blue)' } ;
   width: 3rem;
   height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: var(--Medium-Grey);
+  color: ${props => props.select ? 'var(--White)' : 'var(--Medium-Grey)' };
   font-size: 1.2rem;
+  cursor: pointer;
   font-weight: 700;
   :hover{
     background: var(--Orange);
@@ -26,19 +27,3 @@ const ListItem = styled.li`
 `
 
 export { ListConstainer, ListItem }
-
-
-
-/* export function ListOption(){
-  return(
-    <>
-      <ul className='card__list'>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-      </ul>
-    </>
-  )
-} */

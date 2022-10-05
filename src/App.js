@@ -1,16 +1,16 @@
 import { BrowserRouter } from 'react-router-dom'
 import AppRoute from "./components/routes";
-import { UseNumberProvider } from './components/context'
+import { NumberProvider } from './components/context'
 
 function App() {
 
   return (
     <>
-      <UseNumberProvider>
+      <NumberProvider>
         <BrowserRouter>
           <AppRoute/>
         </BrowserRouter>
-      </UseNumberProvider>
+      </NumberProvider>
     </>
   );
 }

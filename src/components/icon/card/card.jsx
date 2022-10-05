@@ -17,4 +17,16 @@ const Description = styled.p`
   font-size: 1rem;
   line-height: 1.5rem;
 `
-export { Card, Title, Description }
+const Text= styled.p`
+  width: 9rem;
+  margin: 1rem auto;
+  font-size: .8rem;
+  color: var(--Orange);
+  background: #7c87984d;
+  padding: .4rem;
+  border-radius: 20px;
+`
+const Image = styled.img`
+  margin-top: 1rem;
+`
+export { Card, Title, Description, Text, Image }

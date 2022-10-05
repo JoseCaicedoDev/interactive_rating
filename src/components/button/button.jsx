@@ -12,6 +12,7 @@ const Button = styled.button`
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1.rem;
+  cursor: pointer;
   margin-bottom: .5rem;
   :hover{
     background-color: var(--White);
